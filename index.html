@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/e380383ac6.js" crossorigin="anonymous"></script>
+    <style>
+        
+    </style>
+</head>
+<body>
+
+  
+<!----------Header Text and buttons-->
+<div id="header">
+    <div class="container">
+        <nav>
+           <img src="Images/Logo.png" class="logo"> 
+           <ul id="sidemenu"> 
+                <li><a href="#header">// Home</a></li>
+                <li><a href="#about">// About</a></li>
+                <li><a href="#services">// Passions</a></li>
+                <li><a href="#portfolio">// Projects</a></li>
+                <li><a href="#contact">// Contact</a></li>
+                <i class="fa-solid fa-times" onclick="closemenu()"></i>
+           </ul>
+           <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <div class="header-text">
+            <h1>Isaiah King</h1> 
+            <p> Accountable, Creative, Enthusiastic</p>
+        </div> 
+    </div>
+ </div>
+
+<!------------about------------>
+<div id="about">
+    <div class="container">
+        <div class="row">
+          <div class="about-col-1">
+             <img src="Images/sky.jpg"> <!----add image here--  --> 
+          </div>
+        <div class="about-col-2">
+                  <h1 class="sub-title">About Me</h1>
+                  <p> I am a native of Las Vegas, Nevada, currently study Engineering at Simon Fraser University. Over the years, I have developed my skills in Cad, UI/UX development, Circutry and more. I hope to use this website to display my skills, achievemnets, and projects that I am currently working on. I hope you enjoy!  </p>
+                <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('expierence')">Expierence</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                </div>
+                <div class="tab-contents active-tab" id="skills">
+                    <ul>
+                        <li><span>UI/UX</span><br>Designing Web/App interfaces</li>
+                        <li><span>Web Developent</span><br>Web app Development</li>
+                        <li><span>App Development</span><br>Building Andoid/IOS apps</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="expierence">
+                    <ul>
+                        <li><span>2019-2023</span><br>Cad training at West Career and Technological Academy</li>
+                        <li><span>2019-2023</span><br>Woodwork training at West Career and Technological Academy</li>
+                        <li><span>2023-Present</span><br>UI/UX Web Development</li>
+                    </ul>
+                </div>
+                    
+                <div class="tab-contents" id="education">
+                    <ul>
+                       <li><span>2023</span><br>Graduate of West Career and Technological Academy</li>
+                       <li><span>2023-Present</span><br>Student at Simon Fraser University</li>                     
+                    </ul>    
+                </div>
+        </div>
+    </div>
+</div>
+</div>
+<!---services-->
+<div id="services">
+    <div class="container">
+        <h1 class="sub-title">My Passions</h1>
+        <div class="services-list">
+            <div>
+                <i class="fa-solid fa-code"></i>
+                <h2>Personal Projects</h2>
+                <p> I enjoy working on personal projects, here is an up-to-date check into  current projects I am working on</p>
+                <a href="dormprojects.html" target="_blank"> Click Me!</a>
+            </div>
+            <div>
+                <i class="fa-solid fa-music"></i>
+                <h2>Music</h2>
+                <p> Music has been a very big part of my life and has shaped my personality, I created this gallery to hold some of my favorite moments.  </p>
+                <a href="#" target="_blank"> Click Me!</a>
+            </div>
+            <div>
+                <i class="fa-solid fa-medal"></i>
+                <h2>Athletics</h2>
+                <p>From a young age I have played multiple sports and won many achievements, I created a gallery to show few of my favorite moments and achievements.  </p>
+                <a href="#" target="_blank"> Click Me!</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--portfolio-->
+<div id = "portfolio">
+    <div class="container">
+        <h1 class="sub-title">My Projects</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="Images/1.png">
+                <div class="layer">
+                    <h3> Web projects</h3>
+                    <p> Using Javascript, HTML, and CSS, I have created multiple web design projects here are a few     </p>
+                    <a href="web-projects.html" target="_blank"> <i class="fa-solid fa-computer"></i></a>
+                    <p> Click me!</p>
+                </div>
+            </div>
+            <div class="work">
+                <img src="Images/2.png">
+                <div class="layer">
+                    <h3> Dorm projects</h3>
+                    <p> Here are some projects that I have created to automate my dorm room</p>
+                    <a href="dormprojects.html" target="_blank"> <i class="fa-solid fa-door-open"></i></a> 
+                    <p> Click me!</p>
+                    </div>
+            </div>
+            <div class="work">
+                <img src="Images/music logo.png"> <!----- change this one to the cupholder-->
+                <div class="layer">
+                    <h3> Current projects</h3>
+                    <p>  I am currently working on an app for musicians and venues. I created this page to show each step in my   </p>
+                    <a href="educationalprojects.html" target="_blank">  <i class="fa-solid fa-music"></i></a>
+                    <p> Click me!</p>
+                </div>
+            </div>
+        </div>
+        <a href="#header", class="btn">Back to top</a>
+    </div>
+</div>
+<!----------------------------------contact -->
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title"> Contact Me</h1>
+                <p><i class="fa-solid fa-message"></i>Isaiahmking04@gmail.com</p>
+                <p><i class="fa-solid fa-phone"></i>702-250-7497</p>
+                <div class="social-icons">
+                    <a href="https://www.linkedin.com/in/isaiah-king-050618208/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="https://github.com/isaiahthegod04" target="_blank"><i class="fa-brands fa-github"></i></a>
+               </div>
+               <a href="Images/IsaiahKing-Resume-2K24.pdf" download="" class="btn btn2">Download CV</a>
+             </div>
+                    <!---add more socials here-->
+            <div class="contact-right">
+                <form name = "submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="Email" placeholder="Your email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+                <span id="msg"></span>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+<!---------------about section buttons---------------->
+<script>
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+</script>
+
+<script>
+
+    var sidemenu = document.getElementById("sidemenu");
+
+    function openmenu(){
+        sidemenu.style.right = "0";
+    }
+    function closemenu(){
+        sidemenu.style.right = "-200px";
+    }
+
+</script>
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycby6a5ys0PvKw-iXINIV2eq2s_vtTNRDf0VMuw4cBWlutXfVghiraYlHCNABODX1u_lsQA/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg = document.getElementById("msg")
+
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerHTML = "Message sent successfully"
+            setTimeout(function(){
+                msg.innerHMTL = ""
+            },3000)
+            form.reset()
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+</body>    
+
